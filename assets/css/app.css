@@ -9,9 +9,10 @@
 
 body {
     background-color: #121214;
-    max-width: 1200px;
+    max-width: 1140px;
     margin: auto;
     color: #ccc;
+    padding: 20px;
 }
 
 ul {
@@ -20,6 +21,7 @@ ul {
 
 li {
     font-size: 20px;
+    min-height: 30px;
 }
 
 a {
@@ -57,6 +59,7 @@ header {
 .links a {
     display: block;
     text-align: right;
+    text-decoration: none;
 }
 
 /* Habilidades */
@@ -76,11 +79,48 @@ header {
     margin: 40px 0px;
 }
 
+.project p {
+    color: #ffa500;
+}
+
+.project p.italic {
+    color: #ccc;
+    font-style: italic;
+}
+
+.project strong {
+    color: #ccc;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.project a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
 .project ul {
     padding-left: 20px;
-    margin: 10px 0px;
+    margin: 20px 0px 10px 0px;
 }
 
 .project ul li {
     font-size: 18px;
+}
+
+#pessoal li {
+    margin: 10px 0px;
+}
+
+@media (max-width: 960px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links, .name h2 {
+        margin-top: 20px;
+    }
+    .links a {
+        text-align: left;
+    }
 }
