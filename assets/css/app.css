@@ -114,6 +114,10 @@ header {
     margin: 10px 0px;
 }
 
+.underline-none {
+    text-decoration: none;
+}
+
 @media (max-width: 960px) {
     header {
         flex-direction: column;
