@@ -86,6 +86,8 @@ header {
 .project p.italic {
     color: #ccc;
     font-style: italic;
+    margin-top: 6px;
+    font-size: 16px;
 }
 
 .project strong {
